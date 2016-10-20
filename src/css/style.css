@@ -1,0 +1,174 @@
+/* Reset Styles */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin-bottom: 1em; }
+
+blockquote:before, blockquote:after {
+  content: ""; }
+
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+/* HTML5 tags */
+header, section, footer, aside, nav, article, figure {
+  display: block; }
+
+/* hand cursor on clickable input elements */
+label {
+  cursor: pointer; }
+
+input[type=button], input[type=submit] {
+  cursor: pointer; }
+
+button {
+  cursor: pointer;
+  width: auto;
+  overflow: visible; }
+
+/* Sharper Thumbnails */
+img {
+  -ms-interpolation-mode: bicubic; }
+
+hr {
+  margin: 1em 0;
+  border: none;
+  height: 1px;
+  width: 100%; }
+
+/* Main Styles */
+body {
+  font: 16px / 1.6em Verdana, sans-serif;
+  color: #908d89;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+.absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.blurred {
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px); }
+
+.sandbox-options {
+  margin-top: 15px; }
+  .sandbox-options label {
+    display: block;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 1px; }
+  .sandbox-options div {
+    margin-bottom: 5px; }
+  .sandbox-options input {
+    color: #9a9a9a;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+    transition: 300ms all; }
+    .sandbox-options input:focus {
+      color: #222;
+      background: rgba(255, 255, 255, 0.9); }
+
+.sandbox-controls {
+  font-size: 14px; }
+  .sandbox-controls button {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px; }
+  .sandbox-controls ul {
+    display: inline-block;
+    list-style-type: inline; }
+    .sandbox-controls ul li {
+      display: inline-block;
+      margin-right: 5px; }
+      .sandbox-controls ul li:hover {
+        cursor: pointer; }
+    .sandbox-controls ul li a {
+      color: #fff;
+      text-decoration: none; }
+      .sandbox-controls ul li a:hover, .sandbox-controls ul li a:visited, .sandbox-controls ul li a:active, .sandbox-controls ul li a:focus {
+        color: #fff; }
+    .sandbox-controls ul li.iteration-count {
+      font-size: 16px;
+      font-style: italic;
+      font-weight: bold;
+      margin: 0px 13px 0px 10px; }
+
+body {
+  background: #222; }
+
+#inferno-mount {
+  color: #fff; }
+
+.content-wrapper {
+  display: block;
+  margin: 25px; }
+
+.cell, .cell-cave-ground, .cell-cave-wall, .cell-desert-ground, .cell-desert-plateau, .cell-desert-peak, .cell-desert-stairs {
+  display: inline-block;
+  height: 15px;
+  width: 15px; }
+
+.cell-row {
+  display: block;
+  line-height: 0px; }
+
+.cell-cave-ground {
+  background: #ce783b; }
+
+.cell-cave-wall {
+  background: #5a3216; }
+
+.cell-desert-ground {
+  background: #fdd130; }
+
+.cell-desert-plateau {
+  background: #ecb922; }
+
+.cell-desert-peak {
+  background: #9b770d; }
+
+.cell-desert-stairs {
+  background: #f0c851; }

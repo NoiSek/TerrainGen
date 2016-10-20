@@ -1,0 +1,49 @@
+@import 'base'
+@import 'fonts'
+@import 'utilities'
+
+@import 'sandbox-options'
+@import 'sandbox-controls'
+
+body
+  background: #222
+
+#inferno-mount
+  color: #fff
+
+.content-wrapper
+  display: block
+  margin: 25px
+
+.cell
+  display: inline-block
+  height: 15px
+  width: 15px
+
+.cell-row
+  display: block
+  line-height: 0px
+
+.cell-cave-ground, .cell-cave-wall
+  @extend .cell
+
+.cell-cave-ground
+  background: #ce783b
+
+.cell-cave-wall
+  background: darken(#ce783b, 30%)
+
+.cell-desert-ground, .cell-desert-plateau, .cell-desert-peak, .cell-desert-plateau, .cell-desert-stairs
+  @extend .cell
+
+.cell-desert-ground
+  background: #fdd130
+
+.cell-desert-plateau
+  background: #ecb922
+
+.cell-desert-peak
+  background: darken(#ecb922, 20%)
+
+.cell-desert-stairs
+  background: lighten(#ecb922, 10%)

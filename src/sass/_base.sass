@@ -1,0 +1,75 @@
+/* Reset Styles */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-weight: inherit
+  font-style: inherit
+  font-size: 100%
+  font-family: inherit
+  vertical-align: baseline
+
+table
+  border-collapse: separate
+  border-spacing: 0
+  width: 100%
+  margin-bottom: 1em
+
+blockquote
+  &:before, &:after
+    content: ""
+
+q
+  &:before, &:after
+    content: ""
+
+blockquote, q
+  quotes: "" ""
+
+/* HTML5 tags */
+
+header, section, footer, aside, nav, article, figure
+  display: block
+
+/* hand cursor on clickable input elements */
+
+label
+  cursor: pointer
+
+input
+  &[type=button], &[type=submit]
+    cursor: pointer
+
+button
+  cursor: pointer
+  width: auto
+  overflow: visible
+
+/* Sharper Thumbnails */
+
+img
+  -ms-interpolation-mode: bicubic
+
+hr
+  margin: 1em 0
+  border: none
+  height: 1px
+  width: 100%
+
+/* Main Styles */
+
+body
+  font: 16px / 1.6em Verdana, sans-serif
+  color: hsl(400, 3%, 55%)
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:after, &:before
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box

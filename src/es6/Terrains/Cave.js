@@ -38,6 +38,7 @@ export function iterate(options, cellMap) {
 
       if (cellMap[row_index + 1] !== undefined) {
         let lastRow = cellMap[row_index + 1].slice(cell_index - 1, cell_index + 2);
+        neighbors = [...neighbors, ...lastRow];
       }
 
       // A cell with N adjacent walls (including itself) becomes a wall.
@@ -54,9 +55,9 @@ export const API = {
   "iterate":  iterate,
   "description": "Seed with N amount of cells. Normalize by converting cells based on how many neighbors they have.",
   "options": {
-    "fillPercentage": 0.4,
-    "minimumNeighbors": 3,
-    "iterations": 6,
+    "fillPercentage": 0.37,
+    "minimumNeighbors": 4,
+    "iterations": 4,
     "size": [80, 50]
   },
   "tiles": {

@@ -94,6 +94,7 @@ export function iterate(options, cellMap) {
 
       if (cellMap[row_index + 1] !== undefined) {
         let lastRow = cellMap[row_index + 1].slice(cell_index - 1, cell_index + 2);
+        neighbors = [...neighbors, ...lastRow];
       }
 
       // A cell with N adjacent walls (including itself) becomes a wall.
@@ -117,13 +118,13 @@ export const API = {
   "description": "Plateau area defined as percentage of map size.",
   "options": {
     "minimumNeighbors": 3,
-    "maxPlateauArea": 0.3,
+    "maxPlateauArea": 0.2,
     "minPlateauArea": 0.05,
     "minPlateauCount": 10,
     "maxPlateauCount": 25,
     "maxPlateauRatioDifference": 0.2,
     "peakChance": 0.5,
-    "iterations": 8,
+    "iterations": 5,
     "size": [50, 50]
   },
   "tiles": {
